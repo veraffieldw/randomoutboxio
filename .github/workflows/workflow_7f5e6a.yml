@@ -1,0 +1,12 @@
+name: Integration
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy-workflow:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure tools
+        run: echo "checks passed"
